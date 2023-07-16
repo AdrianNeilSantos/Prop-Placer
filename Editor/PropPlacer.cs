@@ -69,10 +69,21 @@ public class PropPlacer : EditorWindow
         propSpawnPrefab = so.FindProperty("spawnPrefab");
         propPreviewMaterial = so.FindProperty("previewMaterial");
 
+
+        string folderPath = "Assets/Prefabs";
+
+        // Check if the folder already exists, and if not, create it.
+        if (!AssetDatabase.IsValidFolder(folderPath))
+        {
+            AssetDatabase.CreateFolder("Assets", "Prefabs");
+        }
+
         // load prefabs list
-        string[] guids = AssetDatabase.FindAssets("t:prefab", new[]{"Assets/Prefabs"});
+        string[] guids = AssetDatabase.FindAssets("t:prefab", new[]{folderPath});
         IEnumerable<string> paths = guids.Select(AssetDatabase.GUIDToAssetPath);
         prefabsList = paths.Select(AssetDatabase.LoadAssetAtPath<GameObject>).ToArray();
+
+
         // Initialize spawn prefab
         if(prefabsList.Length > 0){
             spawnPrefab = prefabsList[0];

@@ -74,7 +74,9 @@ public class PropPlacer : EditorWindow
         IEnumerable<string> paths = guids.Select(AssetDatabase.GUIDToAssetPath);
         prefabsList = paths.Select(AssetDatabase.LoadAssetAtPath<GameObject>).ToArray();
         // Initialize spawn prefab
-        spawnPrefab = prefabsList[0];
+        if(prefabsList.Length > 0){
+            spawnPrefab = prefabsList[0];
+        }
 
 
         LoadConfigurations();

@@ -1,0 +1,35 @@
+{
+  "name": "com.adrian-santos.prop-placer",
+  "version": "1.0.0",
+  "displayName": "Prop Placer",
+  "description": "Prop Placer is a powerful and intuitive Unity Editor tool designed to streamline the process of placing and arranging props within your scenes. With an easy-to-use interface, Prop Placer allows you to scatter a variety of prefabricated objects, such as trees, rocks, and other environmental elements, across your terrain or level.",
+  "unity": "2021.3",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+"keywords": [
+    "Unity",
+    "Editor",
+    "Tool",
+    "Props",
+    "Placement",
+    "Environment",
+    "Level Design",
+    "Terrain",
+    "Scattering",
+    "Randomization",
+    "Undo Support",
+    "Game Development",
+    "Asset Creation",
+    "Prefab",
+    "Visualization"
+  ],
+  "author": {
+    "name": "Adrian Neil Santos",
+    "email": "adrianneilsantos@gmail.com",
+    "url": "https://www.unity3d.com"
+  },
+  "license": "MIT",
+  "type": "tool"
+}

@@ -279,8 +279,8 @@ public class PropPlacer : EditorWindow
                 hitPoses.Add(pose);
 
                 // draw sphere and normal on surface
-                DrawSphere(ptHit.point);
-                Handles.DrawAAPolyLine(ptHit.point, ptHit.point + ptHit.normal);
+                // DrawSphere(ptHit.point);
+                // Handles.DrawAAPolyLine(ptHit.point, ptHit.point + ptHit.normal);
 
                 // mesh
                 if(spawnPrefab != null){
